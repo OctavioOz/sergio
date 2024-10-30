@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestion Clientes {% endblock %}
+
+{% block Cuerpo %}
+<h1> Gestionar Clientes Sergio Altamirano </h1>
+{% for m in Mis_locales %}
+
+<li> {{m.id_cliente}}.-.-.-{{m.nombres}}.-.-.-{{m.apellidos}}.-.-.-{{m.orden}}.-.-.-{{m.pago}}.-.-.-{{m.cantidad}}</li>
+
+{% endfor %}
+
+
+{% endblock %}
